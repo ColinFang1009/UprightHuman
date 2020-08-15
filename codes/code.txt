@@ -1,1 +1,12 @@
 This file includes the instructions for using the codes in the directory.
+
+file_process_model_train.py file reads the file, pre-processes it (word-stopping), and then train a model to be
+saved in the current directory (in the sample, word2vec48.model)
+
+The model_app.py file loads the model we train and is applied to whatever functions needed.
+Available functions includes:
+model.wv.similar_by_word('人民', topn = n) => returns the top n similar words compared with the word we analyze.
+others: most_similar, n_similarity, relative_cosine_similarity, accuracy, cosine_similarities, distance, doesnt_match, etc.
+
+model_train file is merged into file_process_model_train.
+

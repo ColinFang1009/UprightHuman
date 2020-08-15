@@ -9,7 +9,7 @@ from gensim.test.utils import common_texts, get_tmpfile
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 # Read the processed file
-input = './demo.txt'
+input = '../dataset/1948.txt'
 sentences = word2vec.LineSentence(input) 
 # Train the model and name it sample.model
 path = get_tmpfile("sample.model")
